@@ -1,0 +1,36 @@
+	
+{ 
+    "unicast" : "10.0.2.15",
+    "logging" :
+    {
+        "level" : "debug",
+        "console" : "true",
+        "file" : { "enable" : "false" },
+        "dlt" : "false"
+    },
+    "applications" :
+    [
+        {
+            "name" : "HelloWorldService",
+            "id" : "0x1277"
+        }
+    ],
+ 
+            "services" :
+            [
+                {
+                    "service" : "4660",
+                    "instance" : "22136",
+                    "unreliable" : "30490"
+                }
+            ],
+ 
+    "routing" : "vsomeipd",
+    "service-discovery" :
+    {
+        "enable" : "true",
+        "multicast" : "224.244.224.245",
+        "port" : "30490",
+        "protocol" : "udp"
+    }
+}  
